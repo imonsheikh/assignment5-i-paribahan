@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    I ticket
+  </title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/icon/favicon.png" type="image/x-icon" />
+  <!-- Tailwind & daisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- Custom Font -->
+  <style>
+    .font-raleway {
+      font-family: "Raleway", sans-serif;
+    }
+
+    .font-inter {
+      font-family:
+        "Inter", sans-serif;
+    }
+
+    .bg-banner {
+      background-image: url("./assets/images/banner.png"),
+        linear-gradient(to top, rgba(0, 0, 0, 0.565), rgba(255, 255, 255, 0.05));
+      background-blend-mode: multiply;
+    }
+  </style>
+  <!-- Custom Color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            themecolor: "#1DD100",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="font-raleway">
+  <header class="container w-11/12 mx-auto mt-8">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center">
+      <div>
+        <h1 class="text-4xl font-extrabold">
+          I-Ticket
+        </h1>
+      </div>
+      <div class="flex list-none gap-12 text-lg">
+        <li>
+          <a href="#">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Destination
+          </a>
+        </li>
+        <li>
+          <a href>
+            Search
+          </a>
+        </li>
+      </div>
+      <button
+        class="flex gap-2 items-center border-[1px] border-[#1dd10066] bg-[#1dd1001a] px-8 py-4 rounded-md text-themecolor font-bold text-xl">
+        Bus
+        <img src="./assets/icon/small-bus.svg" alt />
+      </button>
+    </nav>
+    <!-- Banner Section -->
+    <section class="bg-banner h-[550px] bg-cover bg-center mt-10 rounded-[32px] flex flex-col">
+      <!-- Banner Text and Button -->
+      <div class="text-white w-3/5 flex flex-col items-center mx-auto text-center justify-center mt-10">
+        <h1 class="text-6xl font-extrabold leading-[86px]">
+          End-to-End Travel with
+          <br />
+          <span class="text-themecolor">
+            I Paribahan
+          </span>
+        </h1>
+        <p class="font-inter text-lg">
+          Yes, you can run unit tests and view the results directly within the app.
+          The integrated testing features allow for a streamlined .
+        </p>
+        <button class="px-8 py-5 bg-themecolor rounded-xl text-lg font-bold tex-[#030712] mt-8">
+          Buy Tickets
+        </button>
+      </div>
+      <!-- Banner Statistic -->
+      <div class="flex gap-6 mx-auto translate-y-[90%]">
+        <!-- Box -->
+        <!-- Main Box -->
+        <div class="flex justify-center items-center">
+          <div
+            class="bg-white w-72 rounded-3xl flex justify-center items-center gap-6 py-8 px-2 Rental partners border-b-4 border-themecolor">
+            <div>
+              <img src="./assets/icon/users-group.svg" alt />
+            </div>
+            <div>
+              <h3 class="text-4xl font-bold font-inter">
+                500K+
+              </h3>
+              <p>
+                Registered Users
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Main Box 2 -->
+        <div class="flex justify-center items-center">
+          <div
+            class="bg-white w-72 rounded-3xl flex justify-center items-center gap-6 py-8 px-2 border-b-4 border-themecolor ">
+            <div>
+              <img src="./assets/icon/ticket.svg" alt />
+            </div>
+            <div>
+              <h3 class="text-4xl font-bold font-inter">
+                1.7 lacks
+              </h3>
+              <p>
+                Tickets sold
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Box -->
+        <!-- Main Box 3 -->
+        <div class="">
+          <div
+            class="bg-white w-72 rounded-3xl flex justify-center items-center gap-6 py-8 px-4 border-b-4 border-themecolor">
+            <div>
+              <img src="./assets/icon/bus-stop.svg" alt />
+            </div>
+            <div>
+              <h3 class="text-4xl font-bold font-inter">
+                80K+
+              </h3>
+              <p>
+                Rental partners
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="">
+    <!-- Ticket Coupon Section -->
+    <section class="container w-11/12 flex flex-col gap-16 mx-auto mt-48">
+      <h3 class="text-4xl font-bold text-[#030712] text-center">
+        Best offers for you
+      </h3>
+      <div class="flex gap-6">
+        <!-- Coupon 1 -->
+        <div class="w-1/2 bg-[#FFBF0F] flex justify-between rounded-3xl">
+          <div class="p-12">
+            <h3 class="font-black font-inter text-[40px] text-[#030712cc]">
+              15% OFF
+            </h3>
+            <p class="font-inter text-xl text-[#030712cc] font-semibold">
+              on your next purchase
+            </p>
+            <p class="font-inter text-lg font-medium text-[#03071280]">
+              use by January 2024
+            </p>
+          </div>
+          <div>
+            <img src="./assets/icon/cupon-devider.svg" alt />
+          </div>
+          <div class="flex flex-col justify-center items-center py-16 pl-2 pr-14">
+            <h3 class="font-bold text-[32px]" id="">
+              NEW15
+            </h3>
+            <p>
+              Coupon Code
+            </p>
+          </div>
+        </div>
+        <!-- Coupon 2 -->
+        <div class="w-1/2 bg-[#F78C9C] flex justify-between rounded-3xl">
+          <div class="p-12">
+            <h3 class="font-black font-inter text-[40px] text-[#030712cc]">
+              20% OFF
+            </h3>
+            <p class="font-inter text-xl text-[#030712cc] font-semibold">
+              on your next purchase
+            </p>
+            <p class="font-inter text-lg font-medium text-[#03071280]">
+              use by January 2024
+            </p>
+          </div>
+          <div>
+            <img src="./assets/icon/cupon-devider.svg" alt />
+          </div>
+          <div class="flex flex-col justify-center items-center py-16 pl-2 pr-14">
+            <h3 class="font-bold text-[32px]" id="">
+              Couple 20
+            </h3>
+            <p>
+              Coupon Code
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="rounded-2xl border-[1px] border-themecolor px-8 py-5 text-themecolor font-bold text-xl w-[20%] mx-auto">
+        See All Offers
+      </button>
+    </section>
+    <!-- Ticket & Seat Section -->
+    <section class="bg-[#F7F8F8] rounded-t-[88px] border-themecolor border-t-2 translate-y-[2px] mt-20">
+      <div>
+        <h3 class="font-bold text-center text-4xl rounded pt-28">
+          P.H Paribahan
+        </h3>
+        <p class="px-80 text-lg text-[#03071299] text-center pt-6 pb-10">
+          Yes, you can run unit tests and view the results directly within the app.
+          The integrated testing features allow for a streamlined .
+        </p>
+      </div>
+      <!-- Ticket Preview Section -->
+      <div class="bg-white w-11/12 mx-auto container rounded-3xl flex justify-between">
+        <!-- Ticket -->
+        <div class="flex flex-col justify-between w-[70%] pt-10 px-8">
+          <!-- Bus Name -->
+          <div class="flex justify-between">
+            <div class="flex gap-3">
+              <div>
+                <img src="./assets/icon/bus-logo.svg" alt />
+              </div>
+              <div>
+                <h3>
+                  Greenline Paribahan
+                </h3>
+                <p>
+                  Coach-009-WEB ! AC_Business
+                </p>
+              </div>
+            </div>
+            <div>
+              <button class="rounded-xl p-4 bg-[#1dd10026] flex gap-3">
+                <img src="./assets/icon/tabler-icon-armchair.svg" alt />
+                <p class="font-medium font-inter text-themecolor text-lg">
+                  <span id>
+                    40
+                  </span>
+                  Seats left
+                </p>
+              </button>
+            </div>
+          </div>
+          <!-- Ticket Details -->
+          <div class="bg-[#F7F8F8] rounded-3xl mb-8">
+            <div class="border-b-2 border-dashed w-[90%] mx-auto flex justify-between py-6">
+              <p>
+                Route
+              </p>
+              <p>
+                Dhaka-Sylhet
+              </p>
+            </div>
+            <div class="border-b-2 border-dashed w-[90%] mx-auto flex justify-between py-6">
+              <p>
+                Departure Time
+              </p>
+              <p>
+                9:00 PM
+              </p>
+            </div>
+            <div class="pt-6 pb-8 flex justify-between w-[90%] mx-auto">
+              <button class="px-4 bg-[#0307120d] rounded-xl py-5 font-inter font-medium text-base">
+                Boarding Point - Laxmipur
+              </button>
+              <button class="px-4 bg-[#0307120d] rounded-xl py-5 font-inter font-medium text-base">
+                Boarding Point - Laxmipur
+              </button>
+              <button class="px-4 bg-[#0307120d] rounded-xl py-5 font-inter font-medium text-base">
+                Boarding Point - Laxmipur
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Divider -->
+        <div>
+          <img src="./assets/icon/ticket-divider.svg" alt />
+        </div>
+        <!-- Ticket Price -->
+        <div class="flex flex-col justify-center items-center pr-20">
+          <img src="./assets/icon/tabler-icon-coin-taka-filled.svg" alt />
+          <p class="font-bold text-3xl text-[#030712] text-center">
+            <span id>
+              500
+            </span>
+            Taka
+          </p>
+          <p class="font-semibold text-2xl text-center text-[#03071299]">
+            Per seat
+          </p>
+        </div>
+      </div>
+      <!-- SEAT SELECTION OR MAIN SECTION START HERE -->
+      <div class="mt-8 bg-white w-11/12 mx-auto container rounded-3xl flex justify-between">
+        <!-- /////Seat Section////// -->
+        <div class="">
+          <h2 class="pt-8 pb-6 mx-8 border-b-2 border-dashed text-[#030712] text-2xl font-semibold">
+            Select Your Seat
+          </h2>
+          <div class="pt-8 pb-6 mx-8 border-b-2 border-dashed flex justify-between items-center">
+            <div class="flex items-center gap-2">
+              <div>
+                <img src="./assets/icon/seat-gray.svg" alt="">
+              </div>
+              <div>
+                <p class="text-[#030712] opacity-50 text-lg font-medium font-inter">
+                  Available
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <img src="./assets/icon/tabler-icon-armchair-fill.svg" alt="">
+              </div>
+              <div>
+                <p class="text-themecolor text-lg font-medium font-inter">
+                  Available
+                </p>
+              </div>
+            </div>
+          </div>
+          <section class="pt-8 pb-6 mx-8 font-inter flex flex-col justify-center">
+            <div class="flex justify-end pb-3">
+              <div class="bg-[#F7F8F8] w-[20%] py-4 flex justify-center rounded-xl">
+                <img src="./assets/icon/tabler-icon-steering-wheel.svg" alt="">
+              </div>
+            </div>
+            <div class="grid grid-cols-11 gap-8">
+              <div class=" h-full flex flex-col gap-4 col-span-1 items-center">
+                <p class="py-4">
+                  A
+                </p>
+                <p class="py-4">
+                  B
+                </p>
+                <p class="py-4">
+                  C
+                </p>
+                <p class="py-4">
+                  D
+                </p>
+                <p class="py-4">
+                  E
+                </p>
+                <p class="py-4">
+                  F
+                </p>
+                <p class="py-4">
+                  G
+                </p>
+                <p class="py-4">
+                  H
+                </p>
+                <p class="py-4">
+                  I
+                </p>
+                <p class="py-4">
+                  J
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-4 col-span-5">
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  A1
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  A2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B1
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C1
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  C2
+                </button>
+              </div>
+              <div class="grid grid-cols-2 gap-4 col-span-5">
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  A3
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B3
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  A4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+                <button class="py-4 bg-[#F7F8F8] rounded-xl">
+                  B4
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- Divider -->
+    <div>
+      <img src="./assets/icon/seat-selection-divider.svg" alt="">
+    </div>
+    <!-- Output And Calculation -->
+    <div class="w-2/5">
+      <h2>
+        Select Your Seat
+      </h2>
+    </div>
+    </div>
+    </section>
+  </main>
+  <footer class="bg-black text-white mx-auto mt-32">
+    <div class="w-11/12 mx-auto container">
+      <div class="flex justify-between items-center pt-32 pb-12 border-b-[1px] border-dashed">
+        <div>
+          <h3 class="font-extrabold text-4xl pb-6">
+            P-Ticket
+          </h3>
+          <p class="font-inter text-lg w-3/5 opacity-80">
+            P-Ticket is a digital platform to make your daily commuting better.
+          </p>
+        </div>
+        <a>
+          <p class="text-xl font-semibold pb-5">
+            Download Our App
+          </p>
+          <img src="./assets/icon/google-play.svg" class="hover:cursor-pointer" alt>
+      </div>
+      <div class="flex justify-between items-center pb-32 pt-8">
+        <div>
+          <p class="opacity-70">
+            @all rights reserved, I-Ticket services limited.2024
+          </p>
+        </div>
+        <div class="flex justify-between list-none gap-8 text-inter font-medium">
+          <li>
+            <a href>
+              Terms & condition
+            </a>
+          </li>
+          <li>
+            <a href>
+              Return & refund policy
+            </a>
+          </li>
+          <li>
+            <a href>
+              Privacy policy
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
