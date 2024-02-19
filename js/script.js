@@ -46,6 +46,7 @@ for (const seat of seats) {
     const coupleCoupon = textReadyToCompare("couple-coupon");
     const newCoupon = textReadyToCompare("new-coupon");
     const couponInput = document.getElementById("coupon-input");
+    
     couponInput.addEventListener("input", function () {
       const inputText = inputReadyToCompare(couponInput);
       if (inputText == coupleCoupon && parseInt(seatCount) >= 4) {
